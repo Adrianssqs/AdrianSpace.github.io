@@ -1,11 +1,275 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>test</title>
-</head>
-<body>
-    This is test.
-</body>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=0">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Blog demo</title>
+		<!-- stylesheets -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/important.css">
+
+		<script src="js/modernizr.js"></script>
+
+		<script src="js/jquery.js"></script>
+		<script src="js/vector.js"></script>
+		
+		<script>
+			$(document).ready(function(e) {
+				// 初始化 传入dom id
+				var victor = new Victor("container", "output");
+				var theme = ["#000000", "#333333"];
+				var color = theme;
+				victor(color).set();
+
+				var oPlay = document.getElementById("btn");
+				var oAudio = document.getElementById("music");
+				
+				oPlay.onclick = function() {
+					if (this.className == "play") {
+						this.className = "stop";
+						oAudio.pause();
+					} else {
+						this.className = "play";
+						oAudio.play();
+					}
+				};
+
+				$('.skill_pic ul li').hover(function() {
+					$(this).find(".yinchang").children('div').css("top", "-56px")
+				}, function() {
+					$(this).find(".yinchang").children('div').css("top", "0")
+				})
+			});
+		</script>
+	</head>
+
+	<body>
+		
+		<!--[if lt IE 7]>
+                <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+		<!-- Header area -->
+		<header id="header">
+
+			<div id="container">
+				<div id="output"></div>
+			</div>
+			<div class="center text-center">
+
+				<h1 class="bigheadline">Hello MIB</h1>
+				<h4 class="subheadline">Welcome to my site.</h4>
+
+			</div>
+			<div class="bottom">
+				<a data-scroll href="#navigation" class="scrollDown animated pulse" id="scrollToContent"><i class="pe-7s-angle-down-circle pe-va"></i></a>
+				<div id="btn" class="play">
+					<audio src="music/Pitbull - Back in Time(1).mp3" autoplay loop id="music"></audio>
+				</div>
+			</div>
+		</header>
+
+		<!-- Navigation area -->
+		<section id="navigation">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-6">
+						<div class="logo"><a data-scroll href="#body" class="logo-text">My site</a></div>
+					</div>
+					<div class="col-xs-6">
+						<div class="nav">
+							<a href="#" data-placement="bottom" title="Menu" class="menu" data-toggle="dropdown"><i class="pe-7s-menu"></i></a>
+							<div class="dropdown-menu">
+								<div class="arrow-up"></div>
+								<ul>
+									<li><a data-scroll href="#body">Home <i class="pe-7s-home"></i></a><span class="menu-effect"></span></li>
+									<li><a data-scroll href="#services">Skills <i class="pe-7s-config"></i></a><span class="menu-effect"></span></li>
+									<li><a data-scroll href="#portfolio">Works <i class="pe-7s-glasses"></i></a><span class="menu-effect"></span></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+		<!-- Content Area -->
+		<div class="copyrights">Collect from </div>
+
+		<!-- services section -->
+		<section id="services" class="service-area">
+			<div class="container">
+				<h2 class="block_title">My skills</h2>
+				<div id="skill">
+					<div class="inner">
+
+						<div class="skill_pic">
+							<ul>
+								<li>
+									<div class="icon"><img src="images/icon_03.png"></div>
+									<div class="yinchang">
+										<div class="name">
+											<p>Html5</p>
+											<span>90%</span> </div>
+									</div>
+								</li>
+								<li>
+									<div class="icon"><img src="images/icon_05.png"></div>
+									<div class="yinchang">
+										<div class="name">
+											<p>CSS3</p>
+											<span>90%</span> </div>
+									</div>
+								</li>
+								<li>
+									<div class="icon"><img src="images/icon_30.png"></div>
+									<div class="yinchang">
+										<div class="name">
+											<p>Node.JS</p>
+											<span>70%</span> </div>
+									</div>
+								</li>
+								<li>
+									<div class="icon"><img src="images/icon_21.png"></div>
+									<div class="yinchang">
+										<div class="name">
+											<p>Photoshop</p>
+											<span>70%</span> </div>
+									</div>
+								</li>
+
+							</ul>
+							<ul>
+								<li>
+									<div class="icon"><img src="images/icon_10.png"></div>
+									<div class="yinchang">
+										<div class="name">
+											<p>AngularJS</p>
+											<span>70%</span> </div>
+									</div>
+								</li>
+								<li>
+									<div class="icon"><img src="images/icon_14.png"></div>
+									<div class="yinchang">
+										<div class="name">
+											<p>Bootstrap</p>
+											<span>80%</span> </div>
+									</div>
+								</li>
+								<li>
+									<div class="icon"><img src="images/icon_23.png"></div>
+									<div class="yinchang">
+										<div class="name">
+											<p>jQuery</p>
+											<span>80%</span> </div>
+									</div>
+								</li>
+								<li>
+									<div class="icon"><img src="images/icon_24.png"></div>
+									<div class="yinchang">
+										<div class="name">
+											<p>JS</p>
+											<span>80%</span> </div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+		<section id="portfolio" class="portfolio-area">
+			<div class="container">
+				<h2 class="block_title">My Works</h2>
+				<div class="row port cs-style-3">
+					<div class="col-md-4 col-sm-6 col-xs-12 item-space">
+						<figure>
+							<img src="images/rain_work.jpg" alt="img04">
+							<figcaption>
+								<h3>rain</h3>
+								<span>WeChat promotion</span>
+								<a href="#" class="button">Take a look</a>
+							</figcaption>
+						</figure>
+					</div>
+					<div class="col-md-4 col-sm-6 col-xs-12 item-space">
+						<figure style="margin-bottom: 10px;">
+							<img src="images/laisi_work.jpg" alt="img01">
+							<figcaption>
+								<h3>laisi</h3>
+								<span>Web site</span>
+								<a href="http://www.lianmengwang.org.cn/" class="button">Take a look</a>
+							</figcaption>
+						</figure>
+						<figure style="margin-bottom: 10px;">
+							<img src="images/stydeon_work.jpg" alt="img04">
+							<figcaption>
+								<h3>studeon</h3>
+								<span>Responsive layout</span>
+								<a href="studeon/index.html" class="button">Take a look</a>
+							</figcaption>
+						</figure>
+						<figure style="margin-bottom: 10px;">
+							<img src="images/awesome_work.jpg" alt="img01">
+							<figcaption>
+								<h3>awesome</h3>
+								<span>Responsive layout</span>
+								<a href="awesome/index.html" class="button">Take a look</a>
+							</figcaption>
+						</figure>
+						<figure>
+							<img src="images/oshine_work.jpg" alt="img02">
+							<figcaption>
+								<h3>Oshine</h3>
+								<span>Static page</span>
+								<a href="oshine/index.html" class="button">Take a look</a>
+							</figcaption>
+						</figure>
+					</div>
+					<div class="col-md-4 col-sm-6 col-xs-12 item-space">
+						<figure>
+							<img src="images/zhaopin_work.jpg" alt="img02">
+							<figcaption>
+								<h3>Recruit</h3>
+								<span>WeChat promotion</span>
+								<a href="#" class="button">Take a look</a>
+							</figcaption>
+						</figure>
+					</div>
+
+					<div class="col-xs-12">
+						<div class="btn-center"><a href="#" class="big button">View all</a></div>
+					</div>
+				</div>
+			</div>
+			<!-- container -->
+		</section>
+
+		<!-- Footer Area -->
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6">
+						<p class="copyright">© Copyright 2015 </p>
+					</div>
+					<div class="col-sm-6">
+						<p class="designed">Copyright &copy; 2015.Company name All rights reserved.More Templates </p>
+					</div>
+				</div>
+				
+			</div>
+		</footer>
+
+		<!-- Necessery scripts -->
+		<script src="js/jquery.actual.min.js"></script>
+		<script src="js/smooth-scroll.js"></script>
+		<script src="js/script.js"></script>
+	</body>
+
 </html>

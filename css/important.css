@@ -1,0 +1,95 @@
+@charset "utf-8";
+/* CSS Document */
+
+.inner {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.inner .title p {
+	display: inline-block;
+	line-height: 60px;
+	font-size: 24px;
+	width: 120px;
+	height: 60px;
+	border-top: 1px solid #e89980;
+}
+
+.skill_pic ul {
+	margin-top: 70px;
+	margin-bottom: 15px;
+	padding: 0 100px;
+	height: 206px;
+}
+.skill_pic ul:nth-child(2) {
+	margin-top: 25px;
+}
+.skill_pic ul li {
+	float: left;
+	text-align: center;
+	width: 250px;
+}
+.skill_pic ul li:nth-child(4) {
+	padding-right: 0;
+}
+.skill_pic .icon img {
+	position: relative;
+	z-index: 100;
+	top: 33%;
+}
+.skill_pic .icon {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	background-color: inherit;
+	border: 7px solid #333;
+	position: relative;
+	transition: all 0.3s;
+	margin: 0 auto;
+}
+.skill_pic .icon:after {
+	content: '';
+	width: 128px;
+	height: 128px;
+	border-radius: 50%;
+	background-color: #fff;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	margin: auto;
+	transition: all 0.3s;
+}
+.skill_pic ul li:hover .icon {
+	border: 7px solid #ccc;
+}
+.skill_pic ul li:hover .icon:after {
+	background-color: #fff;
+}
+.skill_pic .yinchang {
+	width: 250px;
+	height: 56px;
+	overflow: hidden;
+	position: relative;
+}
+.skill_pic .name {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	transition: all 0.5s;
+	text-align: center;
+}
+.skill_pic .name p, .skill_pic .name span {
+	line-height: 56px;
+	font-size: 26px;
+	font-weight: bold;
+	display: block;
+}
+.skill_pic .name p {
+	color: #333;
+}
+.skill_pic .name span {
+	color: #f11e3c;
+}
