@@ -1,0 +1,8 @@
+
+/* start custom scss snippet */
+.logo {width: 40px;height: 40px;margin-right: 12px;}
+.header__brand:hover svg path,.header__brand:hover svg polygon {fill: $main-color-1 !important;transition: all 0.2s ease-in-out;}
+.header__brand:hover a {color: $main-color-1;}
+.navigation > ul > li {margin-right: 2rem;}
+.author-links > ul > li > .github-button:hover {background-color: $main-color-1 !important;}
+/* end custom scss snippet */

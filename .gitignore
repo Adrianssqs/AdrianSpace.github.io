@@ -1,0 +1,8 @@
+myblog_test
+node_modules
+package-lock.json
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor

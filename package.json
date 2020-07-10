@@ -1,0 +1,26 @@
+{
+  "name": "my-blog",
+  "version": "1.0.0",
+  "description": "this is my blog on github",
+  "main": "index.js",
+  "scripts": {
+    "build": "cross-env JEKYLL_ENV=production bundle exec jekyll build",
+    "start": "sudo bundle exec jekyll serve -H 0.0.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Adrianssqs/Adrianssqs.github.io.git"
+  },
+  "keywords": [
+    "blog"
+  ],
+  "author": "adrain",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Adrianssqs/Adrianssqs.github.io/issues"
+  },
+  "homepage": "https://github.com/Adrianssqs/Adrianssqs.github.io#readme",
+  "dependencies": {
+    "bulma": "^0.9.0"
+  }
+}
