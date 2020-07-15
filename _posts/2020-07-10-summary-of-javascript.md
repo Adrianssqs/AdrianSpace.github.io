@@ -2,6 +2,7 @@
 layout: article
 title: The summary of javascript
 tags: javascript
+key: article-js
 ---
 
 > 本篇总结了关于Javascript的一些知识点，都是一些基础知识，其中包括那些容易让人混淆和相似的方法，当中有一些知识点也是面试过程中经常被问到的，特此总结起来，希望大家共勉。

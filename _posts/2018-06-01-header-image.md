@@ -2,6 +2,7 @@
 layout: article
 title: Post with Header Image
 tags: TeXt
+key: article-screenshot
 article_header:
   type: cover
   image:

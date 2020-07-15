@@ -17,12 +17,12 @@
 ## => Site Settings
 ##############################
 text_skin: default # "default" (default), "dark", "forest", "ocean", "chocolate", "orange"
-highlight_theme: default # "default" (default), "tomorrow", "tomorrow-night", "tomorrow-night-eighties", "tomorrow-night-blue", "tomorrow-night-bright"
+highlight_theme: tomorrow-night # "default" (default), "tomorrow", "tomorrow-night", "tomorrow-night-eighties", "tomorrow-night-blue", "tomorrow-night-bright"
 url     : # the base hostname & protocol for your site e.g. https://www.someone.com
 baseurl : # does not include hostname
-title   : Welcome to my Blog
+title   : Adrain's Blog
 description: > # this means to ignore newlines until "Language & timezone"
-  This is my Blog on GitHub,thank you for looking.
+  This is Adrain's Blog on GitHub,thank you for looking.
 
 
 ## => Language and Timezone
@@ -147,13 +147,13 @@ comments:
 ## => Pageview
 ##############################
 pageview:
-  provider: false # false (default), "leancloud", "custom"
+  provider: leancloud # false (default), "leancloud", "custom"
 
   ## Leancloud
   leancloud:
-    app_id    : # LeanCloud App id
-    app_key   : # LeanCloud App key
-    app_class : # LeanCloud App class
+    app_id    : AOsMJBSGvlIn2qVv4C9rUQ4S-gzGzoHsz # LeanCloud App id
+    app_key   : JGIkvWO2NEbmEE59AAD8EyVn # LeanCloud App key
+    app_class : clicks # LeanCloud App class
 
 
 ## => Search

@@ -69,6 +69,8 @@
 
           {%- if _pageview -%}
             {%- if site.pageview.provider -%}
+              {%- include pageview-providers/leancloud/post.html -%}
+
               {%- include snippets/get-locale-string.html key='VIEWS' -%}
               {%- assign _locale_views = __return -%}
               <li><i class="fa fa-eye"></i> <span class="js-pageview" data-page-key="{{ include.article.key }}">0</span> {{ _locale_views }}</li>

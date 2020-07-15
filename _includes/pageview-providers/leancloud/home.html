@@ -22,6 +22,9 @@
       $('.js-pageview').each(function() {
         var $this = $(this);
         var key = $this.attr('data-page-key');
+        // 删除没有key的阅读标记
+        if(!key) $this.parent().remove();
+
         pageview.get(key, function(view) {
           $this.attr('itemprop', 'userInteractionCount').attr('content', view).text(view);
         });
@@ -30,6 +33,3 @@
   </script>
 
 {%- endif -%}
-
-
-

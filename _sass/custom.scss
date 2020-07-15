@@ -5,4 +5,5 @@
 .header__brand:hover a {color: $main-color-1;}
 .navigation > ul > li {margin-right: 2rem;}
 .author-links > ul > li > .github-button:hover {background-color: $main-color-1 !important;}
+.article__content code.highlighter-rouge {background-color: #f9f2f4;color: #c7254e;}
 /* end custom scss snippet */

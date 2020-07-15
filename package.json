@@ -20,7 +20,5 @@
     "url": "https://github.com/Adrianssqs/Adrianssqs.github.io/issues"
   },
   "homepage": "https://github.com/Adrianssqs/Adrianssqs.github.io#readme",
-  "dependencies": {
-    "bulma": "^0.9.0"
-  }
+  "dependencies": {}
 }

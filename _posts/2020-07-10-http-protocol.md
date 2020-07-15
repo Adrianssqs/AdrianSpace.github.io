@@ -2,6 +2,7 @@
 layout: article
 title: HTTP协议
 tags: HTTP HTTPS
+key: article-http
 ---
 
 > http协议相关知识及各版本之间的区别
